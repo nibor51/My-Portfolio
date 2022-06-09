@@ -3,10 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "setup": "npm i && husky install",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "echo '----- Checking Frontend...' && prettier --debug-check . && eslint --ext .jsx . && echo '----- Done!'",
+    "lint": "echo '----- Checking ...' && prettier --debug-check . && eslint --ext .jsx . && echo '----- Done!'",
     "fix": "prettier --write . && eslint --fix --ext .jsx ."
   },
   "dependencies": {
