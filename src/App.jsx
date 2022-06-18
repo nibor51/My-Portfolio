@@ -3,7 +3,6 @@ import Navbar from "@components/Navbar";
 import About from "@pages/About";
 import Projects from "@pages/Projects";
 import Contact from "@pages/Contact";
-import "./App.css";
 
 function App() {
   return (
