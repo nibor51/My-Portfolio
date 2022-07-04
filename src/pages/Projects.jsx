@@ -1,6 +1,6 @@
 import React from "react";
-import projects from "../data/projects.json";
-import Project from "../components/Project";
+import projectList from "../data/projectList.json";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
   return (
@@ -9,8 +9,8 @@ export default function Projects() {
         <h1>Projects</h1>
         <p>This is the project page.</p>
         <ul>
-          {projects.map((project) => (
-            <Project project={project} />
+          {projectList.map((project) => (
+            <ProjectCard project={project} />
           ))}
         </ul>
       </section>
