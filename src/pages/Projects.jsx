@@ -1,4 +1,6 @@
+import React from "react";
 import projects from "../data/projects.json";
+import Project from "../components/Project";
 
 export default function Projects() {
   return (
@@ -8,12 +10,7 @@ export default function Projects() {
         <p>This is the project page.</p>
         <ul>
           {projects.map((project) => (
-            <li key={project.name}>
-              <h2>{project.name}</h2>
-              <p>{project.description}</p>
-              <img src={project.image} alt={project.name} />
-              <a href={project.url}>{project.url}</a>
-            </li>
+            <Project project={project} />
           ))}
         </ul>
       </section>
