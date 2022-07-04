@@ -19,7 +19,7 @@ export default function Contact() {
           <button type="submit">Send</button>
         </form>
       </section>
-      <style jsx>{`
+      <style jsx="true">{`
         #contact {
           padding: 1rem;
         }

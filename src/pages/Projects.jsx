@@ -14,7 +14,7 @@ export default function Projects() {
           ))}
         </ul>
       </section>
-      <style jsx>{`
+      <style jsx="true">{`
         #project {
           padding: 1rem;
         }
