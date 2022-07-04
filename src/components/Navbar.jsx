@@ -16,7 +16,7 @@ export default function Navbar() {
           </li>
         </ul>
       </nav>
-      <style jsx>{`
+      <style jsx="true">{`
         nav {
           display: flex;
           justify-content: space-between;

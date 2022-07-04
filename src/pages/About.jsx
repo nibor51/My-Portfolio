@@ -50,7 +50,7 @@ export default function About() {
           <br />
         </p>
       </section>
-      <style jsx>{`
+      <style jsx="true">{`
         #about {
           padding: 1rem;
         }
