@@ -10,7 +10,7 @@ export default function Projects() {
         <p>This is the project page.</p>
         <ul>
           {projectList.map((project) => (
-            <ProjectCard project={project} />
+            <ProjectCard key={project.id} project={project} />
           ))}
         </ul>
       </section>
@@ -31,20 +31,6 @@ export default function Projects() {
           align-items: center;
           list-style: none;
           padding: 0;
-        }
-        #project li {
-          padding: 1rem;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          margin: 1rem;
-        }
-        #project img {
-          width: 100%;
-          height: auto;
-        }
-        #project a {
-          text-decoration: none;
-          color: #000;
         }
       `}</style>
     </>
