@@ -14,7 +14,9 @@ export default function Navbar() {
             <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <a href="mailto:jonval.robin@gmail.com?subject=Portfolio%20%3A%20Robin%20Jonval">
+              Contact
+            </a>
           </li>
         </ul>
         <div>
