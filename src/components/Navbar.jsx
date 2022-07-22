@@ -4,7 +4,7 @@ import linkedin from "@assets/images/social/linkedin.svg";
 
 export default function Navbar() {
   return (
-    <>
+    <header>
       <nav>
         <ul>
           <li>
@@ -60,6 +60,6 @@ export default function Navbar() {
           color: #000;
         }
       `}</style>
-    </>
+    </header>
   );
 }
