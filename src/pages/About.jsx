@@ -81,6 +81,7 @@ export default function About() {
         }
         #about .about-profile p {
           margin-bottom: 2rem;
+          line-height: 1.5;
         }
         #about .about-profile p::first-letter {
           font-size: 1.5rem;
