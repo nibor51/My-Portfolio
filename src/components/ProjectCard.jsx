@@ -23,8 +23,8 @@ export default function Project({ project }) {
     <li>
       <Button type="button" onClick={handleOpen}>
         <figure>
-          <img src={project.image} alt={project.name} />
-          <figcaption>{project.name}</figcaption>
+          <img src={project.images[0].src} alt={project.images[0].alt} />
+          <figcaption>{project.title}</figcaption>
         </figure>
       </Button>
       <Modal
@@ -34,10 +34,10 @@ export default function Project({ project }) {
         aria-describedby="modal-description"
       >
         <Box sx={style}>
-          <h2 id="modal-title">{project.name}</h2>
-          <img src={project.image} alt={project.name} />
+          <h2 id="modal-title">{project.title}</h2>
+          <img src={project.images[0].src} alt={project.images[0].alt} />
           <p id="modal-description">{project.description}</p>
-          <a href={project.url}>{project.url}</a>
+          <a href={project.link}>{project.link}</a>
         </Box>
       </Modal>
       <style jsx="true">
