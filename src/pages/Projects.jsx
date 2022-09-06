@@ -7,7 +7,7 @@ export default function Projects() {
   // const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/admin/work/api").then((res) => {
+    axios.get("http://localhost:8000/api/work").then((res) => {
       console.warn(res.data);
       setProjectsList(res.data);
     });
